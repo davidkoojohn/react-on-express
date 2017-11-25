@@ -1,7 +1,0 @@
-{
-  "presets": [
-    "react",
-    "env",
-    "es2015"
-  ]
-}
