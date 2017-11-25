@@ -1,0 +1,24 @@
+{
+  "name": "react-on-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkoojohn/react-on-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidkoojohn/react-on-express/issues"
+  },
+  "homepage": "https://github.com/davidkoojohn/react-on-express#readme",
+  "dependencies": {
+    "express-react-views": "^0.10.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  }
+}
