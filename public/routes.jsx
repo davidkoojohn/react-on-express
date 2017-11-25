@@ -3,10 +3,10 @@
 import React from 'react';
 import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-router';
 
-import Layout from './views/layout.jsx';
-import ListPage from './views/list.jsx';
-import DetailPage from './views/detail.jsx';
-import Error404 from './views/404.jsx';
+import Layout from './views/layout';
+import ListPage from './views/list';
+import DetailPage from './views/detail';
+import NotFound from './views/404';
 
 module.exports = (
   <Router history={browserHistory}>
@@ -14,7 +14,7 @@ module.exports = (
       <IndexRoute component={ListPage} />
       <Route path='/movie/:id' component={DetailPage} />
       <Redirect from='/gohome' to='/' />
-      <Route path='*' component={Error404} />
+      <Route path='*' component={NotFound} />
     </Route>
   </Router>
 );

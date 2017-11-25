@@ -1,13 +1,11 @@
 'use strict';
 
-// import the react-router routes
-var Routes = require('./routes.jsx');
+const Routes = require('./routes.jsx');
 
-// import the react-engine's client side booter
-var ReactEngineClient = require('react-engine/lib/client');
+const ReactEngineClient = require('react-engine/lib/client');
 
 // boot options
-var options = {
+const options = {
   routes: Routes,
 
   // supply a function that can be called

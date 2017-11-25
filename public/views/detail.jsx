@@ -1,13 +1,11 @@
 'use strict';
 
-var React = require('react');
+import React from 'react'
 
-module.exports = React.createClass({
-  displayName: 'Detail',
-
-  render: function render() {
-    var movieId = this.props.params.id;
-    var movie = this.props.movies.filter(function(_movie) {
+class Detail extends React.Component {
+  render() {
+    const movieId = this.props.params.id;
+    const movie = this.props.movies.filter(function(_movie) {
       return _movie.id === movieId;
     })[0];
 
@@ -17,6 +15,8 @@ module.exports = React.createClass({
         <img src={movie.image} alt={movie.title} />
         <a href={movie.url} target='_blank'>more info</a>
       </div>
-    );
+    )
   }
-});
+}
+
+export default Detail

@@ -44,28 +44,10 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
-
 	'use strict';
-
-	// import the react-router routes
 
 	var Routes = __webpack_require__(1);
 
-	// import the react-engine's client side booter
 	var ReactEngineClient = __webpack_require__(105);
 
 	// boot options
@@ -87,21 +69,6 @@
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
-
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
 
 	'use strict';
 
@@ -10376,203 +10343,262 @@
 /* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
-
 	'use strict';
 
-	var React = __webpack_require__(2);
-
-	module.exports = React.createClass({
-	  displayName: 'Layout',
-
-	  render: function render() {
-	    return React.createElement(
-	      'html',
-	      null,
-	      React.createElement(
-	        'head',
-	        null,
-	        React.createElement('meta', { charSet: 'utf-8' }),
-	        React.createElement(
-	          'title',
-	          null,
-	          'React Engine Example App'
-	        ),
-	        React.createElement('link', { rel: 'stylesheet', href: '/styles.css' })
-	      ),
-	      React.createElement(
-	        'body',
-	        null,
-	        React.createElement(
-	          'div',
-	          null,
-	          this.props.children
-	        ),
-	        React.createElement('script', { src: '/bundle.js' })
-	      )
-	    );
-	  }
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Layout = function (_React$Component) {
+	  _inherits(Layout, _React$Component);
+
+	  function Layout() {
+	    _classCallCheck(this, Layout);
+
+	    return _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).apply(this, arguments));
+	  }
+
+	  _createClass(Layout, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'html',
+	        null,
+	        _react2.default.createElement(
+	          'head',
+	          null,
+	          _react2.default.createElement('meta', { charSet: 'utf-8' }),
+	          _react2.default.createElement(
+	            'title',
+	            null,
+	            'React-on-Express'
+	          ),
+	          _react2.default.createElement('link', { rel: 'stylesheet', href: '/styles.css' })
+	        ),
+	        _react2.default.createElement(
+	          'body',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            this.props.children
+	          ),
+	          _react2.default.createElement('script', { src: '/bundle.js' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Layout;
+	}(_react2.default.Component);
+
+	exports.default = Layout;
 
 /***/ }),
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
-
 	'use strict';
 
-	var React = __webpack_require__(2);
-	var Router = __webpack_require__(38);
-
-	module.exports = React.createClass({
-	  displayName: 'List',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      { id: 'list' },
-	      React.createElement(
-	        'h1',
-	        null,
-	        'Movies'
-	      ),
-	      React.createElement(
-	        'h6',
-	        null,
-	        'Click on a movie to see the details'
-	      ),
-	      React.createElement(
-	        'ul',
-	        null,
-	        this.props.movies.map(function (movie) {
-	          return React.createElement(
-	            'li',
-	            { key: movie.id },
-	            React.createElement(
-	              Router.Link,
-	              { to: '/movie/' + movie.id },
-	              React.createElement('img', { src: movie.image, alt: movie.title })
-	            )
-	          );
-	        })
-	      )
-	    );
-	  }
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var List = function (_React$Component) {
+	  _inherits(List, _React$Component);
+
+	  function List() {
+	    _classCallCheck(this, List);
+
+	    return _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).apply(this, arguments));
+	  }
+
+	  _createClass(List, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'list' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Movies'
+	        ),
+	        _react2.default.createElement(
+	          'h6',
+	          null,
+	          'Click on a movie to see the details'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          this.props.movies.map(function (movie) {
+	            return _react2.default.createElement(
+	              'li',
+	              { key: movie.id },
+	              _react2.default.createElement(
+	                Router.Link,
+	                { to: '/movie/' + movie.id },
+	                _react2.default.createElement('img', { src: movie.image, alt: movie.title })
+	              )
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return List;
+	}(_react2.default.Component);
+
+	exports.default = List;
 
 /***/ }),
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
-
 	'use strict';
 
-	var React = __webpack_require__(2);
-
-	module.exports = React.createClass({
-	  displayName: 'Detail',
-
-	  render: function render() {
-	    var movieId = this.props.params.id;
-	    var movie = this.props.movies.filter(function (_movie) {
-	      return _movie.id === movieId;
-	    })[0];
-
-	    return React.createElement(
-	      'div',
-	      { id: 'detail' },
-	      React.createElement(
-	        'h1',
-	        null,
-	        movie.title
-	      ),
-	      React.createElement('img', { src: movie.image, alt: movie.title }),
-	      React.createElement(
-	        'a',
-	        { href: movie.url, target: '_blank' },
-	        'more info'
-	      )
-	    );
-	  }
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Detail = function (_React$Component) {
+	  _inherits(Detail, _React$Component);
+
+	  function Detail() {
+	    _classCallCheck(this, Detail);
+
+	    return _possibleConstructorReturn(this, (Detail.__proto__ || Object.getPrototypeOf(Detail)).apply(this, arguments));
+	  }
+
+	  _createClass(Detail, [{
+	    key: 'render',
+	    value: function render() {
+	      var movieId = this.props.params.id;
+	      var movie = this.props.movies.filter(function (_movie) {
+	        return _movie.id === movieId;
+	      })[0];
+
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'detail' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          movie.title
+	        ),
+	        _react2.default.createElement('img', { src: movie.image, alt: movie.title }),
+	        _react2.default.createElement(
+	          'a',
+	          { href: movie.url, target: '_blank' },
+	          'more info'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Detail;
+	}(_react2.default.Component);
+
+	exports.default = Detail;
 
 /***/ }),
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
-
 	'use strict';
 
-	var React = __webpack_require__(2);
-
-	module.exports = React.createClass({
-	  displayName: '404',
-
-	  render: function render() {
-	    return React.createElement(
-	      'h1',
-	      null,
-	      'URL: ',
-	      this.props.location.pathname,
-	      ' - Not Found(404)'
-	    );
-	  }
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var NotFound = function (_React$Component) {
+	  _inherits(NotFound, _React$Component);
+
+	  function NotFound() {
+	    _classCallCheck(this, NotFound);
+
+	    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
+	  }
+
+	  _createClass(NotFound, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'not-found' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'URL: ',
+	          this.props.location.pathname,
+	          ' - Not Found(404)'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return NotFound;
+	}(_react2.default.Component);
+
+	exports.default = NotFound;
 
 /***/ }),
 /* 105 */
@@ -46957,51 +46983,65 @@
 /* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/*-------------------------------------------------------------------------------------------------------------------*\
-	|  Copyright (C) 2017 PayPal                                                                                           |
-	|                                                                                                                     |
-	|  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
-	|  with the License.                                                                                                  |
-	|                                                                                                                     |
-	|  You may obtain a copy of the License at                                                                            |
-	|                                                                                                                     |
-	|       http://www.apache.org/licenses/LICENSE-2.0                                                                    |
-	|                                                                                                                     |
-	|  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed   |
-	|  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for  |
-	|  the specific language governing permissions and limitations under the License.                                     |
-	\*-------------------------------------------------------------------------------------------------------------------*/
-
 	'use strict';
 
-	var React = __webpack_require__(2);
-
-	module.exports = React.createClass({
-	  displayName: '500',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      React.createElement(
-	        'h1',
-	        null,
-	        'Internal Service Error (500)'
-	      ),
-	      React.createElement(
-	        'h3',
-	        null,
-	        'Error message: ',
-	        this.props.err.message
-	      ),
-	      React.createElement(
-	        'code',
-	        null,
-	        this.props.err.stack
-	      )
-	    );
-	  }
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ErrStack = function (_React$Component) {
+	  _inherits(ErrStack, _React$Component);
+
+	  function ErrStack() {
+	    _classCallCheck(this, ErrStack);
+
+	    return _possibleConstructorReturn(this, (ErrStack.__proto__ || Object.getPrototypeOf(ErrStack)).apply(this, arguments));
+	  }
+
+	  _createClass(ErrStack, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'err-stack' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Internal Service Error (500)'
+	        ),
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Error message: ',
+	          this.props.err.message
+	        ),
+	        _react2.default.createElement(
+	          'code',
+	          null,
+	          this.props.err.stack
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ErrStack;
+	}(_react2.default.Component);
+
+	exports.default = ErrStack;
 
 /***/ })
 /******/ ]);
