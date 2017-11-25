@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
-var Content = require('./Content');
+var Content = require('./Html/Content');
 
 class Html extends React.Component {
   render() {
