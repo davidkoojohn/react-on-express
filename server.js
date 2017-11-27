@@ -1,6 +1,6 @@
 'use strict';
 
-const PORT = 3000;
+const PORT = 7777;
 
 import {join} from 'path';
 import express from 'express';
